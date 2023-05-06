@@ -21,7 +21,33 @@ function formatDate(time) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+function displayForcast() {
+  let forcastElement = document.querySelector("#forcast");
+  let forcastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "sat", "sun"];
+  days.forEach(function (day) {
+    forcastHTML =
+      forcastHTML +
+      `
+     <div class="col-2">
+       <div class="forcast-day">${day}</div>
+       <img
+         src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+         alt=""
+         width="36"
+       />
+       <div class="forcast-temp">
+         <span class="forcast-temp-max">18</span>
+         <span class="forcast-temp-min">12</span>
+       </div>
+     
+   </div>`;
+  });
 
+  forcatHTML = forcastHTML + `</div>`;
+  forcastElement.innerHTML = forcastHTML;
+  console.log(forcastHTML);
+}
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -88,3 +114,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search(" ");
+displayForcast();
