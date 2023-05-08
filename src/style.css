@@ -1,9 +1,15 @@
-body {
+.weather-app {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #dadada;
   border-radius: 10px;
+  background-image: url("https://cdn.24.co.za/files/Cms/General/d/482/85cb439831b1419f9bda013fc260e61b.jpg");
+}
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
 }
 ul {
   list-style: none;
@@ -30,7 +36,7 @@ ul {
   text-align: center;
   margin: 20px auto;
   padding: 0;
-  color: rgb(135, 135, 135);
+  color: rgb(87, 84, 84);
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -39,9 +45,9 @@ ul {
   top: 20px;
 }
 small {
-  color: rgb(135, 135, 135);
+  color: rgb(87, 84, 84);
   position: relative;
-  top: 20px;
+  top: -30px;
 }
 .unit {
   position: relative;
