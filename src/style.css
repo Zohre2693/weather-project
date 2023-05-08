@@ -56,10 +56,12 @@ small {
 }
 .celsius {
   text-decoration: none;
+  color: rgb(168, 24, 31);
 }
 
 .farenheit {
   text-decoration: none;
+  color: rgb(168, 24, 31);
 }
 .description {
   position: relative;
